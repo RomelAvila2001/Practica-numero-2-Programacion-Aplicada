@@ -116,7 +116,7 @@ public class VentanaIniciarSecion extends javax.swing.JInternalFrame {
             ventanaPrincipal.getMenuIniciarSecion().setVisible(false);
             ventanaPrincipal.getMenuCrearUsuario().setVisible(false);
             ventanaPrincipal.getMenuBuscar().setVisible(false);
-            JOptionPane.showMessageDialog(this, "BIENVENIDO"+""+persona.getNombre());
+            JOptionPane.showMessageDialog(this, "Bienvenido"+"  "+persona.getNombre());
             ventanaGestionTelefono.setUsuario(persona);
             //ventanaGestionUsuario.setUsuario(persona);
             limpiar();

@@ -31,13 +31,6 @@ public class ControladorPersona extends Controlador<Persona> {
         return null; 
    }
 
-    @Override
-    public int cargarCodigo() {
-        if (findAll().size() > 0) {
-            return findAll().size() + 1;
-        } else {
-            return 1;
-        }
-    }
+    
    
 }

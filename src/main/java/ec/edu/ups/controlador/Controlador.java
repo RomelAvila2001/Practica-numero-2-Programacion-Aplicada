@@ -73,7 +73,14 @@ public abstract class Controlador<T> {
     
     
     public abstract boolean validar(T obj);
-    public abstract int cargarCodigo();
+    
+    public int cargarCodigo(){
+        if (findAll().size() > 0) {
+            return findAll().size() + 1;
+        } else {
+            return 1;
+        }
+    }
 
    
    
