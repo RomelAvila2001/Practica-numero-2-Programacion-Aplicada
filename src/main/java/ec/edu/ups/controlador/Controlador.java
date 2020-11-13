@@ -33,19 +33,13 @@ public abstract class Controlador<T> {
     
     public T read(T comp){
         try{
-            for (T t : listaGenerica) {
+            /*for (T t : listaGenerica) {
                 if(comp.equals(t)){
                   return t;
                 }
-            }
-            //return listaGenerica.stream().filter(objeto->objeto.equals(comp)).findFirst().get();    
-        }catch(NullPointerException ex){
-           System.out.println("--------------------");
-           System.out.println("Execption:"+ex);
-           System.out.println("--------------------");
-           System.out.println("Error: nose a encontrado el elemento.");
-           System.out.println(""); 
-        }
+            }*/
+            return listaGenerica.stream().filter(objeto->objeto.equals(comp)).findFirst().get();    
+        }catch(Exception ex){} 
        return null;
         
     }
@@ -81,7 +75,5 @@ public abstract class Controlador<T> {
             return 1;
         }
     }
-
-   
    
 }

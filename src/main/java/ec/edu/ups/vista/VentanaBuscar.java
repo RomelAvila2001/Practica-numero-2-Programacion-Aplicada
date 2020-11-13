@@ -273,6 +273,7 @@ public class VentanaBuscar extends javax.swing.JInternalFrame {
         txtCedula.setText("");
         txtCorreo.setText("");
         txtNombre.setText("");
+        txtCodigo.setText("");
     }//GEN-LAST:event_btnListarTodoActionPerformed
 
 
